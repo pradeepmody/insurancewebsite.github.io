@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Advisor Photo Placeholder</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400" style="border: 1px solid #ccc;"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Background gradient
+        const gradient = ctx.createLinearGradient(0, 0, 400, 400);
+        gradient.addColorStop(0, '#FFC107');
+        gradient.addColorStop(1, '#FF8F00');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, 400, 400);
+        
+        // Professional silhouette
+        ctx.fillStyle = 'rgba(26, 26, 26, 0.8)';
+        
+        // Head (circle)
+        ctx.beginPath();
+        ctx.arc(200, 130, 50, 0, 2 * Math.PI);
+        ctx.fill();
+        
+        // Body (rectangle with rounded top)
+        ctx.beginPath();
+        ctx.roundRect(160, 180, 80, 120, [0, 0, 20, 20]);
+        ctx.fill();
+        
+        // Suit details
+        ctx.fillStyle = '#2C2C2C';
+        ctx.fillRect(185, 180, 30, 80); // Tie area
+        
+        // Text
+        ctx.fillStyle = '#1A1A1A';
+        ctx.font = 'bold 24px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText('Professional', 200, 340);
+        
+        ctx.font = '20px Arial';
+        ctx.fillText('Insurance Advisor', 200, 365);
+        
+        ctx.font = '14px Arial';
+        ctx.fillStyle = '#666';
+        ctx.fillText('Replace with actual photo', 200, 385);
+        
+        // Convert to data URL and log it
+        console.log('Canvas ready - right-click to save as image');
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#FFC107"/>
+  
+  <!-- Professional silhouette -->
+  <g transform="translate(100, 50)">
+    <!-- Head -->
+    <circle cx="100" cy="80" r="50" fill="#1A1A1A" opacity="0.8"/>
+    
+    <!-- Body/Suit -->
+    <path d="M60 130 Q60 125 70 125 L130 125 Q140 125 140 130 L145 180 Q145 185 140 185 L60 185 Q55 185 55 180 Z" fill="#1A1A1A" opacity="0.8"/>
+    
+    <!-- Tie -->
+    <path d="M95 125 L105 125 L110 160 L100 170 L90 160 Z" fill="#FFC107"/>
+    
+    <!-- Suit Lapels -->
+    <path d="M70 125 L85 140 L85 155 L70 145 Z" fill="#2C2C2C" opacity="0.9"/>
+    <path d="M130 125 L115 140 L115 155 L130 145 Z" fill="#2C2C2C" opacity="0.9"/>
+  </g>
+  
+  <!-- Professional text -->
+  <text x="200" y="320" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1A1A1A" text-anchor="middle">Professional</text>
+  <text x="200" y="350" font-family="Arial, sans-serif" font-size="20" fill="#1A1A1A" text-anchor="middle">Insurance Advisor</text>
+  <text x="200" y="375" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Replace with actual photo</text>
+</svg>

@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yourusername.github.io/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Block access to unnecessary files
+Disallow: /images/generate-placeholder.html
+Disallow: /*.zip
+Disallow: /*.tar.gz
